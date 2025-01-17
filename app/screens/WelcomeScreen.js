@@ -1,10 +1,17 @@
 import React from "react";
-import { Image, ImageBackground, StyleSheet, Text, View,Platform } from "react-native";
+import {
+  Image,
+  ImageBackground,
+  StyleSheet,
+  Text,
+  View,
+  Platform,
+} from "react-native";
 
-import colors from "../config/colors";
 import AppButton from "../components/AppButton";
+import routes from "../navigation/routes";
 
-function WelcomeScreen({navigation}) {
+function WelcomeScreen({ navigation }) {
   return (
     <ImageBackground
       blurRadius={5}
@@ -17,8 +24,15 @@ function WelcomeScreen({navigation}) {
       </View>
 
       <View style={styles.buttonContainer}>
-        <AppButton title="login" onPress={()=>navigation.navigate("Login")}/>
-        <AppButton title="register" color="secondary" onPress={()=>navigation.navigate("Register")}/>
+        <AppButton
+          title="login"
+          onPress={() => navigation.navigate(routes.LOGIN)}
+        />
+        <AppButton
+          title="register"
+          color="secondary"
+          onPress={() => navigation.navigate(routes.REGISTER)}
+        />
       </View>
     </ImageBackground>
   );
@@ -49,13 +63,8 @@ const styles = StyleSheet.create({
   },
 });
 
-Platform.select(
-  {
-    web:{
-  
-      },
-    },
-  
-);
+Platform.select({
+  web: {},
+});
 
 export default WelcomeScreen;
