@@ -1,9 +1,14 @@
 import React from "react";
-import { View, StyleSheet, Image,TouchableWithoutFeedback } from "react-native";
+import {
+  View,
+  StyleSheet,
+  Image,
+  TouchableWithoutFeedback,
+} from "react-native";
 import colors from "../config/colors";
 import AppText from "./AppText";
 
-function Card({ title, subTitle, image,onImageTap }) {
+function Card({ title, subTitle, image, onImageTap }) {
   return (
     <TouchableWithoutFeedback onPress={onImageTap}>
       <View style={styles.card}>

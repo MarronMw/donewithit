@@ -1,6 +1,6 @@
 import apiClient from "./client";
 
-const endpoint = "/";
+const endpoint = "/api/listings";
 const getListings = () => apiClient.get(endpoint);
 
 export default {

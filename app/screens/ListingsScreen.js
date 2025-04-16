@@ -34,8 +34,11 @@ function ListingsScreen({ navigation }) {
 
   const loadListings = async () => {
     const response = await listingsAPI.getListings();
-    // setListings(response.data);
-    console.log(response.data);
+    if (response.data != null) {
+      setListings(response.data);
+    }
+    setListings(response.data);
+    // console.log(response.data);
   };
 
   return (
