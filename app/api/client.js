@@ -4,7 +4,7 @@ import { create } from "apisauce";
 // const port = process.EXPO_PUBLIC_HOST_PORT_NUMBER;
 
 const apiClient = create({
-  baseURL: `http://192.168.70.13:8000`,
+  baseURL: `http://192.168.27.83:8000`,
 });
 
 export default apiClient;

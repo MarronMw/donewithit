@@ -11,7 +11,7 @@ function ListingDetailsScreen({route}) {
   return (
     <GestureHandlerRootView>
       <View>
-        <Image style={styles.image} source={item.image} />
+        <Image style={styles.image} source={{uri:item.image}} />
         <View styles={styles.detailsContainer}></View>
         <View style={styles.detailsContainer}>
           <AppText style={styles.title}>{item.title?item.title:'Failed to Load Listing  Title'}</AppText>
