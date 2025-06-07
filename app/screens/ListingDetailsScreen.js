@@ -18,8 +18,8 @@ function ListingDetailsScreen({route}) {
           <AppText style={styles.price}>{item?`$${item.price}`:"$Failed To Load Listing Price"}</AppText>
           <View style={styles.userContainer}>
             <ListItem
-              image={require("../assets/mosh.jpg")}
-              title="Mosh Hamedani"
+              image={require("../assets/me.jpg")}
+              title="Maranatha James Ndege"
               subTitle="5 Listings"
             />
           </View>

@@ -21,12 +21,12 @@ const initialMessages = [
     title: "Dr.MarronCode",
     decription:
       "boiz tiyeni tipange zokut tikadye coz njala nde simmene yandichapiramo eeish",
-    image: require("../assets/mosh.jpg"),
+    image: require("../assets/me.jpg"),
   },
   {
     id: 2,
-    title: "T2",
-    decription: "D2",
+    title: "Mosh Hamedani",
+    decription: "Hello mate",
     image: require("../assets/mosh.jpg"),
   },
 ];
@@ -96,8 +96,8 @@ function MessagesScreen(props) {
             setMessages([
               {
                 id: 2,
-                title: "T2",
-                decription: "D2",
+                title: "Mosh Hamedani",
+                decription: "hello mate",
                 image: require("../assets/mosh.jpg"),
               },
             ])

@@ -34,7 +34,7 @@ function AccountScreen({ navigation }) {
         <ListItem
           title="Maranatha Ndege"
           subTitle="codewithmarron@code.com"
-          image={require("../assets/mosh.jpg")}
+          image={require("../assets/me.jpg")}
         />
       </View>
 
