@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FlatList, StyleSheet, StatusBar } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 
 import Screen from "../components/Screen";
-import ListingDetailsScreen from "./ListingDetailsScreen";
 import Card from "../components/Card";
 import colors from "../config/colors";
 import routes from "../navigation/routes";
